@@ -32,7 +32,14 @@ app.get('/about',(req,res)=>{
 //res.send('about file');
 res.render('about.hbs',{
     pageTitle:'about page',
+    welcomeMessage:'welcome to projects page'
    });
+});
+app.get('/projects',(req,res) => {
+res.render('projects.hbs',{
+    pageTitle:'Projects Page',
+    welcomeMessage:'Welcome to About Page'
+});
 });
 
 app.get('/bad',(req,res)=>{
